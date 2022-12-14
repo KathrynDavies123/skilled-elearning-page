@@ -49,7 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height:100vh;
+  height: 100vh;
 }
 
 .getstarted {
@@ -159,7 +159,8 @@ header div {
   object-position: 50% 0;
 }
 
-.herotablet, .herodesktop {
+.herotablet,
+.herodesktop {
   display: none;
 }
 
@@ -243,8 +244,8 @@ footer a:hover {
 
 @media (min-width: 768px) {
   body {
-    width:100vw;
-    overflow-x:auto;
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   nav {
@@ -263,70 +264,86 @@ footer a:hover {
     justify-content: space-between;
     align-items: flex-start;
     gap: 0;
-    margin:0;
-    margin-top:90px;
+    margin: 0;
+    margin-top: 90px;
+    height:500px;
   }
 
   header div {
-    margin-left:39px;
+    margin-left: 39px;
     margin-right: -40px;
-  }
-
-  header p {
     width:398px;
   }
 
+  header p {
+    width: 398px;
+  }
+
   .herotablet {
+    position: relative;
     display: block;
-    width:360px;
-    height:640px;
+    width: 360px;
+    height: 640px;
     object-fit: cover;
     object-position: -6%;
-    margin-top:-32%;
+    top: -50%;
+    right: 2%;
   }
 
   main {
     padding: 0;
     margin: 0;
-    padding-top: 30px;
     padding-bottom: 86px;
-    column-gap:11px;
-    row-gap:56px;
+    column-gap: 11px;
+    row-gap: 56px;
+    width:100%;
   }
 
   .infocards {
-    width:340px;
+    width: 340px;
   }
 
   h2 {
-    width:339px;
-    padding-top:56px;
+    width: 339px;
+    padding-top: 56px;
   }
 
   footer {
-    padding:36px 40px;
+    padding: 36px 40px;
   }
 }
 
-@media (min-width:1400px) {
+@media (min-width:1050px) {
+  header div {
+    margin-left: 100px;
+    width:auto;
+  }
+}
+
+@media (min-width: 1400px) {
+body {
+  display:flex;
+  flex-direction: column;
+}
+
   nav {
     margin: 24px 165px 0 165px;
   }
 
   .getstarted {
     font-size: var(--body-m);
-    padding:14px 31px;
+    padding: 14px 31px;
     z-index: 3;
   }
 
   header {
-    margin-top:172px;
+    margin-top: 172px;
   }
 
   header div {
-    margin-left:150px;
+    margin-left: 150px;
     width: 457px;
-    gap:29px;
+    gap: 29px;
   }
 
   h1 {
@@ -335,69 +352,82 @@ footer a:hover {
   }
 
   header p {
-    width:457px;
+    width: 457px;
   }
 
   .orangegradient {
-    margin-top:10px;
+    margin-top: 10px;
   }
 
   p {
-    font-size:var(--body-m);
+    font-size: var(--body-m);
   }
 
   .herotablet {
-    display:none;
+    display: none;
   }
 
   .herodesktop {
-    display:block;
-    width:656px;
-    margin-top:-18%;
+    display: block;
+    width: 656px;
+    margin-top: -18%;
   }
 
   main {
-    margin-top:200px;
-    column-gap:30px;
-    row-gap:70px;
-    padding-bottom:140px;
+    max-width:1450px;
+    margin-top: 200px;
+    column-gap: 30px;
+    row-gap: 100px;
+    padding-bottom: 140px;
+    align-self: center;
   }
 
   h2 {
-    width:350px;
+    width: 350px;
     font-size: var(--heading-m);
     line-height: var(--line-m);
-    padding:64px 32px;
+    padding: 64px 32px;
   }
 
   .infocards {
-    gap:0;
+    gap: 0;
     width: 350px;
     height: 322px;
-    padding:0 32px;
-    display:grid;
+    padding: 0 32px;
+    display: grid;
     grid-template-rows: 60px auto 70px;
   }
 
   .infocards div {
-    gap:24px;
+    gap: 24px;
   }
 
   h3 {
-    font-size:var(--heading-s);
-    margin-top:8px;
+    font-size: var(--heading-s);
+    margin-top: 8px;
   }
 
   footer {
-    padding:32px 165px;
+    padding: 32px 165px;
   }
 
   footer img {
-    width:111px;
-    height:27px;
+    width: 111px;
+    height: 27px;
   }
 
   footer a {
     padding: 14px 31px;
+  }
+}
+
+@media (min-width:1600px) {
+  .herodesktop {
+    margin-top:-16%;
+  }
+
+  main {
+    max-width:1700px;
+    column-gap:200px;
   }
 }
