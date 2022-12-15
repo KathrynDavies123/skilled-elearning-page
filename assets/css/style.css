@@ -244,7 +244,6 @@ footer a:hover {
 
 @media (min-width: 768px) {
   body {
-    width: 100vw;
     overflow-x: hidden;
   }
 
@@ -321,11 +320,6 @@ footer a:hover {
 }
 
 @media (min-width: 1400px) {
-body {
-  display:flex;
-  flex-direction: column;
-}
-
   nav {
     margin: 24px 165px 0 165px;
   }
